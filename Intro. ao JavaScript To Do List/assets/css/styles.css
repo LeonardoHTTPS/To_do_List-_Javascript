@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #38a78b;
+  }
+  
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .tarefas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(22, 16, 71);
+    background-color: transparent;
+  }
+  
+  button {
+    border: 1px solid rgb(94, 27, 107);
+    border-radius: 5px;
+    background-color: rgb(52, 38, 116);
+    color: rgb(233, 243, 243);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .task-item label{
+    margin-left: 7px;
+  }
+  
+  :checked + label {
+    text-decoration: line-through;
+    color: rgb(179, 85, 32);
+  }
